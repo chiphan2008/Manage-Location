@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "typeRoots": [
+      "../node_modules/@types",
+      "../node_modules/@types/node",
+      "./src/types"
+    ],
+    "paths": {
+      "base": ["./base/"],
+      "interceptor": ["./interceptor/"],
+      "exception": ["./exception/"],
+      "utils": ["./utils/"],
+      "types": ["./types/"],
+      "config": ["./config/"],
+      "modules": ["./modules/"],
+    },
+    "resolveJsonModule": true,
+  }
+}
