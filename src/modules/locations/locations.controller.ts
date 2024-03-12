@@ -57,7 +57,10 @@ export class LocationsController {
     @Body() updateLocationDto: UpdateLocationDto,
     @Req() req: { body: UpdateLocationDto },
   ) {
-    console.log("🚀 ~ LocationsController ~ updateLocationDto:", updateLocationDto)
+    console.log(
+      '🚀 ~ LocationsController ~ updateLocationDto:',
+      updateLocationDto,
+    );
     return this.locationsService.update(+id, req.body);
   }
 
